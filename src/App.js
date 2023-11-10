@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Inicio from './inicio';
-import Login from './login'; 
+import Login from './login';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -23,11 +23,13 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={loggedIn ? (
-              <Inicio username={username} onLogout={handleLogout} />
-            ) : (
-              <Login onLogin={handleLogin} />
-            )}
+            element={
+              loggedIn ? (
+                <Inicio username={username} onLogout={handleLogout} />
+              ) : (
+                <Login onLogin={handleLogin} />
+              )
+            }
           />
         </Routes>
       </div>
@@ -36,4 +38,3 @@ function App() {
 }
 
 export default App;
-
