@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* sube el contenedor */
+  margin: 0;
+}
+
+.login-container {
+  width: 500px; /* Ancho del contenedor */
+  height: 500px; /* Altura del contenedor */
+  padding: 50px;
+  background-color: #add8e6; /* Color de fondo */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #F0F8FF; /* Cambiado a color blanco azulado */
+}
+
+.logo-image {
+  width: 100px; /* Tamaño de la imagen */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos del formulario */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #F0F8FF; /* Cambiado a color blanco azulado */
+}
+
+input {
+  padding: 10px; /* Reduce o agranda los textbox */
+  margin-bottom: 40px; /* Espaciado en los textbox */
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  width: 100%; /* Reduce el ancho en la interfaz de los textbox */
+}
+
+button {
+  background-color: #0094d9;
+  color: #F0F8FF; /* Cambiado a color blanco azulado */
+  padding: 10px 10px; /* Ajusta el padding para hacer el botón más corto */
+  border: none;
+  cursor: pointer;
+  width: 30%; /* Ajusta el ancho del botón */
+  margin-top: 10px; /* Agrega espacio entre botón y txbox */
+}
+
+button:hover {
+  background-color: #0094d9;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    width: 90%;
+    height: auto;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+
+.notes {
+  color: #F0F8FF;
+  font-size: 14px;
+  margin-top: 20px;
+}
