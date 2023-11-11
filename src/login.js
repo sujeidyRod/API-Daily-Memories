@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
-import diaryLogo from './diary.png';
+import diaryyLogo from './diaryy.png';
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('Libro@gmail.com');
@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
   return (
     <div className="login-container">
       <h2>Bienvenido a My Diary</h2>
-      <img src={diaryLogo} alt="My Diary Logo" className="logo-image" />
+      <img src={diaryyLogo} alt="My Diary Logo" className="logo-image" />
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label htmlFor="username">Nombre de usuario</label>
@@ -29,7 +29,7 @@ const Login = ({ onLogin }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="password">Contraseña</label>
+          <label htmlFor="password"> Contraseña</label>
           <input
             type="password"
             id="password"
